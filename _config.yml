@@ -63,7 +63,9 @@ about_content: | # this will include new lines to allow paragraphs
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
   I love soccer, games (computer/board/etc), my family, grilling and beer. I also like to study and you can often find me
-  reading textbooks realted to Computer Science. What about things I don't like? - Cold weather.
+  reading textbooks realted to Computer Science. I also like being friendly and straightforward with people.
+
+  What about things I don't like? - Cold weather.
 
 # Footer
 footer_show_references: true
