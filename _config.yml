@@ -3,34 +3,34 @@ repository: luizjr92/modern-resume-theme
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-phone: Your phone number (optional)
-website: Your website (eg. https://google.com)(optional)
+name: Luiz Chagas
+title: Software Engineer
+email: luiz@luizchagas.com
+#phone: Your phone number (optional)
+#website: Your website (eg. https://google.com)(optional)
 
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username: jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
-orcid_username: 0000-0000-0000-0000
+#twitter_username: jekyllrb
+github_username: luizjr92
+#stackoverflow_username: "00000001"
+#dribbble_username: jekyll
+#facebook_username: jekyll
+#flickr_username: jekyll
+#instagram_username: jekyll
+linkedin_username: luizchagas
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+#orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-  - title: Link name
-    icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-    url: Link url (eg. https://google.com)
+#additional_links:
+#  - title: Link name
+#    icon: Font Awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#    url: Link url (eg. https://google.com)
 # - title: another link
 #   icon: font awesome brand icon name (eg. fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -43,15 +43,12 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+about_profile_image: images/luiz.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else markdown supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images
+  Hi! I'm a software developer/engineer from Brazil with a strong background in programming fudamentals. I currently work with full stack development, mainly with <mark>JavaScript</mark> technologies. 
+  I try to know everything a project may need, from setting up DNS and configuring the server up to developing the application itself. I'm very proficient with <mark>React</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things. 
+  Even though I'm not a designer, I'm confident enough to use great templates made by professionals and tweak them as needed! 
+  I'm passionate about well-written code and functional user interfaces.
 
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
