@@ -1,9 +1,9 @@
 # Project template
-- layout: top
+- layout: left
   name: "Vera: Plant Care App"
   link: https://veraplantcareapp.com
   #github: Github page for project (eg. sproogen/modern-resume-theme)(optional)
   quote: >
     Vera is care management app for plants that makes tracking as fun as the care itself, so anyone can be a successful plant parent.
   description: | # this will include new lines to allow paragraphs
-    I worked on developing Vera from scratch. The main technologies used were <mark>React-Native</mark> and <mark>Google Firebase</mark>.
+    I worked on developing Vera from scratch. The tech stack used was <mark>React-Native</mark> and <mark>Google Firebase</mark>.
