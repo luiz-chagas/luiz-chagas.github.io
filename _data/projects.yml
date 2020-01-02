@@ -6,4 +6,7 @@
   quote: >
     Vera is care management app for plants that makes tracking as fun as the care itself, so anyone can be a successful plant parent.
   description: | # this will include new lines to allow paragraphs
-    I worked on developing Vera from scratch. The tech stack used was <mark>React-Native</mark> and <mark>Google Firebase</mark>.
+    I worked on developing Vera from scratch. We were a team of 4 people (1 designer, 2 devs, 1 marketing) and we built the first version of the app in only 16 days. 
+    Vera was a hit on both App Store and Play Store, being downloaded over a thousand times on its first month.
+    If you have plants and often forget to water them, this app is for you!
+    The main technologies used were <mark>React-Native</mark> and <mark>Google Firebase</mark>.
