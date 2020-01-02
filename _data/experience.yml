@@ -9,7 +9,7 @@
 #  description: | # this will include new lines to allow paragraphs
 #    Description of role
 
-- layout: top
+- layout: left
   company: Crema
   link: https://crema.us/
   jobs:
