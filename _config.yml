@@ -43,10 +43,10 @@ linkedin_username: luizchagas
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/luiz.jpeg
+about_profile_image: assets/images/luiz.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Hi! I'm a software developer/engineer from Brazil with a strong background in programming fudamentals. I currently work with full stack development, mainly with <mark>JavaScript</mark> technologies. 
-  I try to know everything a project may need, from setting up DNS and configuring the server up to developing the application itself. I'm very proficient with <mark>React</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things. 
+  I try to know everything a project might need, from setting up the server up all the way up to the code itself. I'm very proficient with <mark>React</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things. 
   Even though I'm not a designer, I'm confident enough to use great templates made by professionals and tweak them as needed! 
   I'm passionate about well-written code and functional user interfaces.
 
@@ -62,9 +62,8 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-  Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  I love soccer, games (computer/board/etc), my family, grilling and beer. I also like to study and you can often find me
+  reading textbooks realted to Computer Science. What about things I don't like? - Cold weather.
 
 # Footer
 footer_show_references: true
