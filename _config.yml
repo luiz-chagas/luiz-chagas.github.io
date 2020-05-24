@@ -12,7 +12,7 @@ email: luiz@luizchagas.com
 darkmode: false
 
 # Social links
-twitter_username: LuizChagas92
+twitter_username: functionalguy
 github_username: luizjr92
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
@@ -45,11 +45,20 @@ linkedin_username: luizchagas
 # about_title: About Me (Use this to override about section title)
 about_profile_image: assets/images/luiz.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi! I'm a software developer/engineer from Brazil with a strong background in programming fudamentals. I currently work with full stack development, mainly with <mark>JavaScript</mark> technologies. 
-  I try to know everything a project might need, from setting up the server up all the way up to the code itself. I'm very proficient with <mark>React</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things. 
-  Even though I'm not a designer, I'm confident enough to use great templates made by professionals and tweak them as needed! 
-  I'm passionate about well-written code and functional user interfaces.
+  Hi! I'm a software developer with a background in Computer Science and about 7 years of experience.
 
+
+  I currently work with full stack development, mainly with <mark>JavaScript</mark> technologies.
+
+
+  I'm very proficient with <mark>React</mark>, <mark>Typescript</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things.
+  
+  
+  Most of my recent work revolves around building applications with great User Experience while keeping code quality to the best I can (readable, tested, self-documented and simple).
+  
+  
+  <mark>Functional Programming</mark> is my jam.
+    
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
 
@@ -62,8 +71,12 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  I love soccer, games (computer/board/etc), my family, grilling and beer. I also like to study and you can often find me
-  reading books related to Computer Science / Software Development. I try to be friendly and straightforward with people.
+  I love soccer, games (computer/board/etc), my family, grilling and beer. 
+  
+  I also like to dig deep into programming and study topics of my interest, you may
+  find me reading textbooks about Computer Science / Software Development. 
+  
+  I'm overall a friendly person and enjoy being nice to others.
 
   What about things I don't like? - Cold weather.
 
