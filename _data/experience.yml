@@ -20,8 +20,8 @@
   quote: Crema is digital product agency helping individuals and companies thrive through innovation, design and technology.
   description: | # this will include new lines to allow paragraphs
     Developed web and mobile applications. Built both enterprise application and customer products.
-    
-    Some of the most important tools I used: JavaScript, Typescript, React, React-Native, Redux, Firebase, Expo, MaterialUI.
+
+    I work on a daily basis with JavaScript, Typescript, React, React-Native, Redux, Firebase, Expo, MaterialUI.
 
 - layout: left
   company: Self-Employed
@@ -30,5 +30,5 @@
       dates: January 2017 - November 2018
   description: | # this will include new lines to allow paragraphs
     Developed full-stack web applications. For some reason, I worked on a lot of projects with real time interactions and optimization of existing software. 
-    
-    Some of the most important tools I used: JavaScript, Node.JS, Angular, React, Redux, MongoDB, Redis, Socket.IO, Phaser, HTML Canvas.
+
+    I worked mainly with JavaScript, Node.JS, Angular, React, Redux, MongoDB, Redis, Socket.IO, Phaser, HTML Canvas.

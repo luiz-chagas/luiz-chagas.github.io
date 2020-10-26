@@ -53,13 +53,13 @@ about_content: | # this will include new lines to allow paragraphs
 
 
   I'm very proficient with <mark>React</mark>, <mark>Typescript</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things.
-  
-  
+
+
   Most of my recent work revolves around building applications with great User Experience while keeping code quality to the best I can (readable, tested, self-documented and simple).
-  
-  
+
+
   <mark>Functional Programming</mark> is my jam.
-    
+
 # Projects Section
 # projects_title: Projects #(Use this to override about projects section title)
 
@@ -72,17 +72,15 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me #(Use this to override about more section title)
 more_content: | # this will include new lines to allow paragraphs
-  I love soccer, games (computer/board/etc), my family, grilling and beer. 
-  
+  I love soccer, games (computer/board/etc), my family, grilling and beer. 🍻
+
   I also like to dig deep into programming and study topics of my interest, you may
   find me reading textbooks about Computer Science / Software Development. 
-  
+
   I'm overall a friendly person and enjoy being nice to others.
 
-  What about things I don't like? - Cold weather.
-
 # Footer
-footer_show_references: true
+footer_show_references: false
 
 # Build settings
 # theme: modern-resume-theme (Use this is you are hosting your resume yourself)
