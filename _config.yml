@@ -54,41 +54,44 @@ about_profile_image: assets/images/luiz.jpeg
 about_content: | # this will include new lines to allow paragraphs
   Hi! I'm a software developer with a background in Computer Science and about 7 years of experience.
 
-
   I currently work with full stack development, mainly with <mark>JavaScript</mark> technologies.
-
 
   I'm very proficient with <mark>React</mark>, <mark>Typescript</mark>, <mark>Node.js</mark>, <mark>(No)Sql Databases</mark>, API integrations and other things.
 
-
   Most of my recent work revolves around building applications with great User Experience while keeping code quality to the best I can (readable, tested, self-documented and simple).
-
 
   <mark>Functional Programming</mark> is my jam.
 
 content:
   - title: Experience
-      layout: list
-      content:
-        - layout: left
-          title: Crema
-          sub_title: Sr. Application Developer
-          caption: December 2019 - present
-          link: https://crema.us/
-          quote: >
-            Crema is digital product agency helping individuals and companies thrive through innovation, design and technology.
-          description: | # this will include new lines to allow paragraphs
-            Developed web and mobile applications. Built both enterprise application and customer products.
+    layout: list
+    content:
+      - layout: left
+        title: Crema
+        sub_title: Sr. Application Developer
+        caption: December 2019 - present
+        link: https://crema.us/
+        quote: >
+          Crema is digital product agency helping individuals and companies thrive through innovation, design and technology.
+        description: | # this will include new lines to allow paragraphs
+          Developed web and mobile applications. Built both enterprise application and public products. Mentored junior developers.
 
-            I work on a daily basis with JavaScript, Typescript, React, React-Native, Redux, Firebase, Expo, MaterialUI.
-        - layout: left
-          title: Self-Employed
-          sub_title: Software Developer
-          caption: January 2017 - November 2018
-          description: | # this will include new lines to allow paragraphs
-            Developed full-stack web applications. For some reason, I worked on a lot of projects with real time interactions and optimization of existing software. 
-
-            I worked mainly with JavaScript, Node.JS, Angular, React, Redux, MongoDB, Redis, Socket.IO, Phaser, HTML Canvas.
+          Worked on a daily basis with JavaScript, Typescript, React, React-Native, Redux, Firebase, Expo, MaterialUI, NodeJS.
+      - layout: left
+        title: Crema
+        sub_title: Application Developer
+        caption: November 2018 - December 2019
+        link: https://crema.us/
+        quote: >
+          Crema is digital product agency helping individuals and companies thrive through innovation, design and technology.
+        description: | # this will include new lines to allow paragraphs
+          Developed web and mobile applications. Built both enterprise application and public products.
+      - layout: left
+        title: Self-Employed
+        sub_title: Software Developer
+        caption: January 2017 - November 2018
+        description: | # this will include new lines to allow paragraphs
+          Developed full-stack web applications. For some reason, I worked on a lot of projects with real time interactions and optimization of existing software.
 
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -108,9 +111,9 @@ content:
         link: https://github.com/luiz-chagas/stock-info
         github: luiz-chagas/stock-info
         description: | # this will include new lines to allow paragraphs
-          At some point I decided to make my own roboadvisor to trade stocks using Robinhood. As a by-product I built `stock-info`, a utility that retrieves current stock information from Yahoo's Finance API.
+          I wrote my own roboadvisor to trade stocks using Robinhood. As a by-product I built `stock-info`, a utility that retrieves current stock information from Yahoo's Finance API.
 
-          The library runs on node and is exported as an open source package on NPM.
+          The library runs on node and is exported as an open source package on NPM, being used in over 50 projects on GitHub.
   - title: Education
     layout: list
     content:
