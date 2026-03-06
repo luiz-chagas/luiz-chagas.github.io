@@ -10,7 +10,7 @@
 }
 
 body {
-  background: var(--desktop-bg);
+  background: var(--desktop-bg) url("../assets/bliss.png") center / cover no-repeat fixed;
   min-height: 100vh;
   overflow-y: auto;
   padding-bottom: 30px; /* clear fixed taskbar */
@@ -191,7 +191,7 @@ a:hover {
 }
 
 /* =========================================================
-   Taskbar
+   Taskbar — XP Luna blue
    ========================================================= */
 
 .taskbar {
@@ -200,12 +200,18 @@ a:hover {
   left: 0;
   right: 0;
   height: 30px;
-  background: #c0c0c0;
+  background: linear-gradient(to bottom,
+    #4a80d4 0%,
+    #2d6ab8 6%,
+    #1f55a5 45%,
+    #1a4a96 50%,
+    #1f55a5 100%);
   display: flex;
   align-items: center;
   gap: 3px;
   padding: 2px 4px 2px 0;
-  border-top: 2px solid #ffffff;
+  border-top: 1px solid #5a8ede;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 /* ---- Start button (XP Luna green) ---- */
@@ -225,18 +231,20 @@ a:hover {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 
   background: linear-gradient(to bottom,
-    #2e7a2e 0%, #256825 45%,
-    #1a5a1a 50%, #256825 100%);
+    #2e8020 0%, #276c1a 45%,
+    #1d5812 50%, #276c1a 100%);
   border: none;
-  border-right: 1px solid #1a5c1a;
-  border-radius: 0 0 8px 0;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  border-right: 1px solid #1a6010;
+  border-radius: 0 12px 12px 0;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    1px 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .start-button:active {
   background: linear-gradient(to bottom,
-    #2d8a2d 0%, #4aab4a 100%);
-  box-shadow: none;
+    #2d8a20 0%, #3ea030 100%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .win-flag {
@@ -257,11 +265,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 
 .taskbar-icon-btn:hover {
-  border: 1px solid #808080;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
 }
 
 /* ---- Open window buttons ---- */
@@ -285,19 +295,24 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: #c0c0c0;
-  border-top: 1px solid #ffffff;
-  border-left: 1px solid #ffffff;
-  border-bottom: 1px solid #404040;
-  border-right: 1px solid #404040;
-  outline: 1px solid #808080;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom,
+    #1f5db0 0%, #184d9a 100%);
+  border-top: 1px solid #5a90e0;
+  border-left: 1px solid #5a90e0;
+  border-bottom: 1px solid #0f3a80;
+  border-right: 1px solid #0f3a80;
+  border-radius: 2px;
 }
 
 .taskbar-window-btn:active {
-  border-top: 1px solid #404040;
-  border-left: 1px solid #404040;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+  background: linear-gradient(to bottom,
+    #1a4a96 0%, #2d6ab8 100%);
+  border-top: 1px solid #0f3a80;
+  border-left: 1px solid #0f3a80;
+  border-bottom: 1px solid #5a90e0;
+  border-right: 1px solid #5a90e0;
 }
 
 /* ---- System tray ---- */
@@ -305,24 +320,27 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 2px 4px;
-  background: #c0c0c0;
-  border-top: 1px solid #808080;
-  border-left: 1px solid #808080;
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+  padding: 2px 6px;
+  background: linear-gradient(to bottom,
+    #1a4faa 0%, #153d8a 100%);
+  border-left: 1px solid #5a8ede;
+  border-top: 1px solid #2a5fc4;
   white-space: nowrap;
+  border-radius: 0;
 }
 
 .tray-icons {
   font-size: 12px;
   letter-spacing: 2px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.5));
 }
 
 .taskbar-clock {
   font-size: 11px;
   font-family: Tahoma, Arial, sans-serif;
   padding: 0 2px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* =========================================================
