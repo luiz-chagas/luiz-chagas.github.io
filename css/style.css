@@ -39,11 +39,6 @@ a:hover {
   margin-bottom: 12px;
 }
 
-#window-contact {
-  column-span: all;
-  max-width: 480px;
-  margin: 0 auto 12px;
-}
 
 
 /* =========================================================
@@ -365,7 +360,5 @@ a:hover {
     padding: 10px 8px;
   }
 
-  #window-contact {
-    max-width: 100%;
-  }
+
 }
