@@ -1,0 +1,364 @@
+/* =========================================================
+   Layout overrides & content styles
+   XP.css handles: window chrome, title bar, window-body,
+   status bar, buttons, form controls
+   ========================================================= */
+
+:root {
+  --desktop-bg: #008080;
+  --link: #0000cc;
+}
+
+body {
+  background: var(--desktop-bg) url("../assets/bliss.png") center / cover no-repeat fixed;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 30px; /* clear fixed taskbar */
+  font-size: 12px;
+}
+
+a {
+  color: var(--link);
+}
+a:hover {
+  color: #cc0000;
+}
+
+/* =========================================================
+   Desktop — two-column mosaic
+   ========================================================= */
+
+.desktop {
+  column-count: 2;
+  column-gap: 12px;
+  padding: 16px;
+}
+
+.window {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
+
+
+/* =========================================================
+   Profile picture
+   ========================================================= */
+
+.about-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.profile-pic {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 50%;
+  /* Win98 sunken inset border */
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+/* =========================================================
+   Content components
+   ========================================================= */
+
+.window-body h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #808080;
+}
+
+.window-body p {
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+/* ---- Tag/badge list ---- */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 11px;
+  background: #c0c0c0;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #404040;
+  border-right: 1px solid #404040;
+}
+
+/* ---- Experience entry ---- */
+.exp-entry {
+  margin-bottom: 10px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-weight: bold;
+}
+
+.exp-date {
+  font-size: 11px;
+  color: #444;
+  white-space: nowrap;
+}
+
+.exp-company {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+/* ---- Project entry ---- */
+.project-entry {
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-stat {
+  font-size: 11px;
+  color: #333;
+  margin-top: 1px;
+}
+
+/* ---- Education entry ---- */
+.edu-entry {
+  margin-bottom: 8px;
+}
+
+.edu-degree {
+  font-weight: bold;
+}
+
+.edu-school {
+  font-style: italic;
+}
+
+/* ---- Contact list ---- */
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 64px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   Taskbar — XP Luna blue
+   ========================================================= */
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom,
+    #4a80d4 0%,
+    #2d6ab8 6%,
+    #1f55a5 45%,
+    #1a4a96 50%,
+    #1f55a5 100%);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 4px 2px 0;
+  border-top: 1px solid #5a8ede;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* ---- Start button (XP Luna green) ---- */
+.start-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+  padding: 0 10px 0 6px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Tahoma, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  cursor: default;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+
+  background: linear-gradient(to bottom,
+    #2e8020 0%, #276c1a 45%,
+    #1d5812 50%, #276c1a 100%);
+  border: none;
+  border-right: 1px solid #1a6010;
+  border-radius: 0 12px 12px 0;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    1px 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.start-button:active {
+  background: linear-gradient(to bottom,
+    #2d8a20 0%, #3ea030 100%);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.win-flag {
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4));
+}
+
+/* ---- Quick launch icon buttons ---- */
+.taskbar-icon-btn {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1;
+  cursor: default;
+  background: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.taskbar-icon-btn:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+/* ---- Open window buttons ---- */
+.taskbar-windows {
+  flex: 1;
+  display: flex;
+  gap: 2px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.taskbar-window-btn {
+  flex: 0 1 150px;
+  min-width: 60px;
+  height: 22px;
+  padding: 0 6px;
+  font-size: 11px;
+  font-family: Tahoma, Arial, sans-serif;
+  cursor: default;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom,
+    #1f5db0 0%, #184d9a 100%);
+  border-top: 1px solid #5a90e0;
+  border-left: 1px solid #5a90e0;
+  border-bottom: 1px solid #0f3a80;
+  border-right: 1px solid #0f3a80;
+  border-radius: 2px;
+}
+
+.taskbar-window-btn:active {
+  background: linear-gradient(to bottom,
+    #1a4a96 0%, #2d6ab8 100%);
+  border-top: 1px solid #0f3a80;
+  border-left: 1px solid #0f3a80;
+  border-bottom: 1px solid #5a90e0;
+  border-right: 1px solid #5a90e0;
+}
+
+/* ---- System tray ---- */
+.system-tray {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  background: linear-gradient(to bottom,
+    #1a4faa 0%, #153d8a 100%);
+  border-left: 1px solid #5a8ede;
+  border-top: 1px solid #2a5fc4;
+  white-space: nowrap;
+  border-radius: 0;
+}
+
+.tray-icons {
+  font-size: 12px;
+  letter-spacing: 2px;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.5));
+}
+
+.taskbar-clock {
+  font-size: 11px;
+  font-family: Tahoma, Arial, sans-serif;
+  padding: 0 2px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================================
+   Wide — three-column mosaic
+   ========================================================= */
+
+@media (min-width: 1050px) {
+  .desktop {
+    column-count: 3;
+  }
+}
+
+/* =========================================================
+   Mobile — stacked scrollable layout
+   ========================================================= */
+
+@media (max-width: 800px) {
+  body {
+    padding-bottom: 38px;
+  }
+
+  .desktop {
+    column-count: 1;
+    padding: 10px 8px;
+  }
+
+
+}
