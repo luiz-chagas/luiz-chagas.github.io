@@ -359,6 +359,111 @@ a:hover {
     column-count: 1;
     padding: 10px 8px;
   }
+}
+
+/* =========================================================
+   Error dialog overlay
+   ========================================================= */
+
+#error-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9998;
+  align-items: center;
+  justify-content: center;
+}
+
+#error-overlay.visible {
+  display: flex;
+}
+
+#error-dialog {
+  width: 420px;
+  max-width: calc(100vw - 32px);
+}
 
 
+.error-body {
+  padding: 12px;
+}
+
+.error-icon-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.error-icon-row > div > p:first-child {
+  margin-top: 0;
+}
+
+.error-icon {
+  width: 32px;
+  height: 32px;
+  background: #cc0000;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.error-detail,
+.error-report-prompt {
+  font-size: 11px;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.error-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.error-buttons button {
+  min-width: 110px;
+}
+
+/* =========================================================
+   Blue Screen of Death
+   ========================================================= */
+
+#bsod {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0000aa;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  padding: 48px 80px;
+  line-height: 1.6;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  cursor: none;
+}
+
+#bsod.visible {
+  display: block;
+}
+
+body.bsod-open {
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  #bsod {
+    padding: 24px 20px;
+    font-size: 12px;
+  }
 }

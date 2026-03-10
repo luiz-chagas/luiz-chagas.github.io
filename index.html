@@ -460,6 +460,92 @@
     <!-- /.desktop -->
 
     <!-- ================================================
+     Error dialog
+     ================================================ -->
+    <div id="error-overlay">
+      <div class="window" id="error-dialog">
+        <div class="title-bar">
+          <span class="title-bar-text">luizchagas.com</span>
+          <div class="title-bar-controls">
+            <button aria-label="Close" id="error-close-btn"></button>
+          </div>
+        </div>
+        <div class="window-body error-body">
+          <div class="error-icon-row">
+            <div class="error-icon">&#10006;</div>
+            <div>
+              <p>
+                <strong
+                  >luizchagas.com has encountered a problem and needs to close.
+                  We are sorry for the inconvenience.</strong
+                >
+              </p>
+              <p class="error-detail">
+                The window you just tried to close has filed a formal complaint.
+                All windows on this page are load-bearing and critical to the
+                structural integrity of Luiz&rsquo;s professional image.
+              </p>
+              <p class="error-report-prompt">
+                Please tell Luiz about this problem.
+              </p>
+              <p class="error-report-prompt">
+                He will read your report, feel briefly validated, and do nothing
+                about it. We will treat this report as confidential and
+                anonymous. Your IP address, however, has already been framed.
+              </p>
+            </div>
+          </div>
+          <div class="error-buttons">
+            <button id="error-send-btn">Send Error Report</button>
+            <button id="error-dont-send-btn">Don't Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+     Blue Screen of Death
+     ================================================ -->
+    <div id="bsod">
+      <p>
+        A problem has been detected and luizchagas.com has been shut down to
+        prevent you from closing any more windows.
+      </p>
+      <p>PORTFOLIO_CLOSE_BUTTON_EXCEPTION</p>
+      <p>
+        If this is the first time you've seen this screen, it means you tried to
+        close a window on a personal website. That window had feelings.<br /><br />
+        If this screen appears again, consider just... reading the content
+        instead.
+      </p>
+      <p>
+        Check to make sure you actually meant to click that button.<br />
+        If you were trying to learn about Luiz, the information is still
+        there.<br />
+        It did not go anywhere. The windows are fine. Everything is fine.
+      </p>
+      <p>
+        If problems continue, please send Luiz an email at
+        luiz@luizchagas.com.<br />
+        He will probably respond faster than Microsoft ever did.<br />
+        To recover from this screen, press CTRL+ALT+F5 to refresh your
+        expectations,<br />or simply reload the page like a normal person.
+      </p>
+      <p>Technical information:</p>
+      <p>*** STOP: 0x00000539 (0xDEADBEEF,0xCAFEBABE,0x1337C0DE,0xC105E4F5)</p>
+      <p>
+        ***&nbsp;&nbsp;resume.sys - Address DEADBEEF base at CAFEBABE, DateStamp
+        FridayAfternoon
+      </p>
+      <p>
+        Beginning dump of professional accomplishments<br />
+        ................................................................................<br />
+        Dump complete. 10+ years of TypeScript, React, and questionable life
+        choices<br />successfully written to disk. Please hire Luiz.
+      </p>
+    </div>
+
+    <!-- ================================================
      Taskbar
      ================================================ -->
     <div class="taskbar">
@@ -480,37 +566,16 @@
         start
       </button>
 
-      <!-- <div class="vertical-bar"></div> -->
-
-      <!-- Quick launch -->
-      <!-- <button class="taskbar-icon-btn" title="My Computer">&#128421;</button>
-      <button class="taskbar-icon-btn" title="My Documents">&#128193;</button>
-      <button class="taskbar-icon-btn" title="Internet Explorer">
-        &#127760;
-      </button> -->
-
-      <!-- <div class="vertical-bar"></div> -->
-
-      <!-- Open window buttons -->
-      <div class="taskbar-windows">
-        <!-- <button class="taskbar-window-btn">&#128196; About Me</button>
-        <button class="taskbar-window-btn">&#128188; Work Experience</button>
-        <button class="taskbar-window-btn">&#128295; Projects</button>
-        <button class="taskbar-window-btn">&#127979; Education</button>
-        <button class="taskbar-window-btn">&#128522; More About Me</button>
-        <button class="taskbar-window-btn">&#128140; Contact</button> -->
-      </div>
+      <div class="taskbar-windows"></div>
 
       <!-- System tray -->
       <div class="system-tray">
-        <!-- <div class="vertical-bar"></div> -->
         <span class="tray-icons">&#128266; &#128246;</span>
         <div class="taskbar-clock" id="clock"></div>
       </div>
     </div>
 
     <script>
-      // Minimal clock — only JS on the page
       function updateClock() {
         var now = new Date();
         var h = now.getHours().toString().padStart(2, "0");
@@ -519,6 +584,36 @@
       }
       updateClock();
       setInterval(updateClock, 10000);
+
+      var overlay = document.getElementById("error-overlay");
+      var bsod = document.getElementById("bsod");
+
+      document
+        .querySelectorAll(".title-bar-controls button[aria-label='Close']")
+        .forEach(function (btn) {
+          if (btn.id === "error-close-btn") return;
+          btn.addEventListener("click", function () {
+            overlay.classList.add("visible");
+          });
+        });
+
+      function dismissError() {
+        overlay.classList.remove("visible");
+      }
+      document
+        .getElementById("error-close-btn")
+        .addEventListener("click", dismissError);
+      document
+        .getElementById("error-dont-send-btn")
+        .addEventListener("click", dismissError);
+
+      document
+        .getElementById("error-send-btn")
+        .addEventListener("click", function () {
+          overlay.classList.remove("visible");
+          bsod.classList.add("visible");
+          document.body.classList.add("bsod-open");
+        });
     </script>
   </body>
 </html>
