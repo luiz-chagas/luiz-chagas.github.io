@@ -436,10 +436,23 @@ a:hover {
   font-size: 14px;
   padding: 48px 80px;
   line-height: 1.6;
-  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   cursor: none;
 }
 
 #bsod.visible {
   display: block;
+}
+
+body.bsod-open {
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  #bsod {
+    padding: 24px 20px;
+    font-size: 12px;
+  }
 }
