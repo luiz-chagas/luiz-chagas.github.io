@@ -1,12 +1,12 @@
 # luiz-website
 
-Personal website for Luiz Chagas — a new version of luizchagas.com.
+Personal website for Luiz Chagas — luizchagas.com.
 
 ## Tech Stack
 
-- Plain HTML + CSS, no build tools, no frameworks, no JavaScript (unless minimal)
+- Plain HTML + CSS, minimal JavaScript (clock, window close easter eggs)
 - Deployed via GitHub Pages from the `main` branch root
-- `.nojekyll` present to skip Jekyll processing
+- Custom domain via `CNAME`
 
 ## Design System: Windows 98/XP Theme
 
@@ -53,23 +53,28 @@ outline: 1px solid #808080; /* inner shadow */
 
 ## File Structure
 ```
-luiz-website/
 ├── index.html          # Desktop + all content windows
-├── css/
-│   └── style.css       # Windows 98/XP theme
-├── assets/
-│   └── icons/          # Window/desktop icons (SVG or PNG)
-├── CLAUDE.md           # This file
-└── .nojekyll           # GitHub Pages: skip Jekyll
+├── css/style.css       # Windows 98/XP theme
+├── assets/             # Images (luiz.png, bliss.png)
+├── CNAME               # luizchagas.com
+├── sitemap.xml
+├── robots.txt
+└── CLAUDE.md
 ```
 
-## Content (sourced from luizchagas.com)
-- **Bio**: Software developer, ~7 years experience, full-stack JavaScript, functional programming focus
-- **Work**: Crema (Sr. App Dev Dec 2019–, App Dev Nov 2018–Dec 2019), Self-Employed (Jan 2017–Nov 2018)
+## Content
+
+All copy lives in `index.html` (no build step, no CMS).
+
+- **Bio**: Staff Engineer at Crema, 10+ years, AWS SAA, technical leadership + hands-on dev
+- **Work**: Crema (Staff Engineer, DoE, Sr. App Dev, App Dev), Freelance, RHI Magnesita, CEFET-MG
 - **Projects**: Vera Plant Care App, Stock Info NPM package
-- **Education**: Computer Engineering CEFET-MG, Exchange Kansas State, Associate's CEFET-MG
-- **Contact**: luiz@luizchagas.com, GitHub, LinkedIn, Twitter
+- **Education**: B.S. Computer Engineering CEFET-MG, Exchange Kansas State, Associate's CEFET-MG
+- **Certifications**: AWS Certified Solutions Architect (2024)
+- **Contact**: luiz@luizchagas.com, GitHub, LinkedIn
 
 ## Deployment
-Push to `main` branch. Enable GitHub Pages in repo Settings > Pages > Source: main branch / root.
-Site will be available at `https://luiz-chagas.github.io/luiz-website/` (or custom domain).
+
+Push to `main`. GitHub Pages serves the repo root. Site: https://luizchagas.com
+
+After deploy, submit the sitemap in [Google Search Console](https://search.google.com/search-console) (property: `luizchagas.com`, sitemap URL: `https://luizchagas.com/sitemap.xml`).

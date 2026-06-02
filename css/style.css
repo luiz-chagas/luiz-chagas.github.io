@@ -69,10 +69,10 @@ a:hover {
    Content components
    ========================================================= */
 
-.window-body h2 {
+.window-body h1 {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
   padding-bottom: 2px;
   border-bottom: 1px solid #808080;
 }
